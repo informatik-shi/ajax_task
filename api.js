@@ -15,7 +15,7 @@ export async function getData(url) {
   try {
     response = await fetch(url);
   } catch {
-    throw new Error('Не удалось получить данные из db.json');
+    throw new Error(`Не удалось получить данные из ${url}`);
   }
   return readJson(response, 'Получение данных');
 }
