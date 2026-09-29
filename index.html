@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AJAX: получение и отправка JSON</title>
+  <style>
+    body { font: 18px/1.5 Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; }
+    pre { padding: 16px; overflow-x: auto; background: #f2f4f7; border-radius: 8px; }
+    #status { font-weight: bold; }
+    #status.error { color: #b00020; }
+  </style>
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <h1>AJAX-запросы</h1>
+  <p id="status" role="status">Загрузка данных…</p>
+  <h2>Данные из db.json</h2>
+  <pre id="source-data">Ожидание ответа…</pre>
+  <h2>Ответ на POST-запрос</h2>
+  <pre id="sent-data">Ожидание отправки…</pre>
+</body>
+</html>
